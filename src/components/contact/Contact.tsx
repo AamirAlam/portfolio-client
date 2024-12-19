@@ -1,6 +1,5 @@
-import { FadeIn } from '../animations/FadeIn';
-import { ContactForm } from './ContactForm';
-import { ContactInfo } from './ContactInfo';
+import { FadeIn } from "../animations/FadeIn";
+import { ContactInfo } from "./ContactInfo";
 
 export default function Contact() {
   return (
@@ -10,7 +9,6 @@ export default function Contact() {
           <FadeIn>
             <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
             <ContactInfo />
-            <ContactForm />
           </FadeIn>
         </div>
       </div>
