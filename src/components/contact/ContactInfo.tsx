@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Briefcase } from "lucide-react";
 
 export function ContactInfo() {
   const contacts = [
@@ -16,6 +16,11 @@ export function ContactInfo() {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/aamir2alam/",
       label: "LinkedIn",
+    },
+    {
+      icon: Briefcase,
+      href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
+      label: "Resume",
     },
   ];
 

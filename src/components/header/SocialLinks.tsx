@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Briefcase } from "lucide-react";
 import { SocialIcon } from "./SocialIcon";
 
 const socialLinks = [
@@ -17,6 +17,11 @@ const socialLinks = [
     icon: Mail,
     href: "mailto:aamiralam1991@gmail.com",
     label: "Email Contact",
+  },
+  {
+    icon: Briefcase,
+    href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
+    label: "Resume",
   },
 ];
 
