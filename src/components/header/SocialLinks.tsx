@@ -18,11 +18,11 @@ const socialLinks = [
     href: "mailto:aamiralam1991@gmail.com",
     label: "Email Contact",
   },
-  {
-    icon: Briefcase,
-    href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
-    label: "Resume",
-  },
+  // {
+  //   icon: Briefcase,
+  //   href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
+  //   label: "Resume",
+  // },
 ];
 
 export function SocialLinks() {

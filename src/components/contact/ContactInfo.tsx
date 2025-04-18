@@ -17,11 +17,11 @@ export function ContactInfo() {
       href: "https://www.linkedin.com/in/aamir2alam/",
       label: "LinkedIn",
     },
-    {
-      icon: Briefcase,
-      href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
-      label: "Resume",
-    },
+    // {
+    //   icon: Briefcase,
+    //   href: "https://drive.google.com/file/d/1KXjSmXzahkXPLVmI_nQcgKBESNjzaXm9/view?usp=sharing",
+    //   label: "Resume",
+    // },
   ];
 
   return (
