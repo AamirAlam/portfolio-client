@@ -3,6 +3,36 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
   {
+    title: "QuickSwap",
+    description:
+      "Leading decentralized exchange (DEX) on Polygon network offering fast, low-cost token swaps with automated market maker functionality and advanced DeFi features.",
+    image: "https://chainstack.com/wp-content/uploads/2021/07/Quickswap_darker.jpg",
+    tech: ["React", "TypeScript", "Polygon", "Web3.js", "Subgraph", "GraphQL"],
+    github: "https://github.com/QuickSwap",
+    live: "https://quickswap.exchange/",
+    achievements: [
+      "Optimized app loading performance by 40%",
+      "Integrated v3 components for enhanced trading experience",
+      "Integrated farming components with farm subgraphs for real-time data",
+      "Leading DEX on Polygon with billions in TVL",
+    ],
+  },
+  {
+    title: "Neura Vaults",
+    description:
+      "Advanced DeFi yield farming protocol offering automated vault strategies for maximizing returns across multiple blockchain networks with sophisticated risk management.",
+    image: "https://neura-vaults-frontend.vercel.app/logo.webp",
+    tech: ["React", "TypeScript", "Solidity", "Web3.js", "Ethers.js", "Vercel"],
+    github: "https://github.com/creeping-vampires?tab=repositories",
+    live: "https://neura-vaults-frontend.vercel.app/markets",
+    achievements: [
+      "Built automated yield farming strategies",
+      "Implemented multi-chain vault architecture",
+      "Developed risk management algorithms",
+      "Created intuitive markets dashboard interface",
+    ],
+  },
+  {
     title: "Flow3",
     description:
       "Achieve your Web3 goals with No code. Flow3 simplifies this process by offering a no-code solution where users can seamlessly select and connect pre-built web3 modules.",
