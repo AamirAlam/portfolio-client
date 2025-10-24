@@ -9,6 +9,7 @@ interface ProjectCardProps {
   github: string;
   live: string;
   index: number;
+  gradientColors?: string;
 }
 
 export function ProjectCard({
@@ -19,22 +20,23 @@ export function ProjectCard({
   github,
   live,
   index,
+  gradientColors = "from-blue-600/10 via-purple-600/10 to-blue-600/10",
 }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      className="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
+      className={`relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500 group`}
     >
-      <motion.img
+      {/* Gradient overlay on hover */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradientColors} opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none`} />
+      <img
         src={image}
         alt={title}
         className="w-full h-48 object-cover"
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.3 }}
       />
-      <div className="p-6">
+      <div className="p-6 relative z-20">
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
         <p className="text-gray-400 mb-4">{description}</p>
         <motion.div className="flex flex-wrap gap-2 mb-4">

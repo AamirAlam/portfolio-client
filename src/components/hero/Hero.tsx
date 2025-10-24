@@ -7,17 +7,17 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-16 md:pt-20 bg-gradient-to-b from-black to-gray-900 text-white"
+      className="min-h-screen pt-24 md:pt-20 pb-16 bg-gradient-to-b from-black to-gray-900 text-white flex items-start md:items-center relative overflow-hidden"
     >
-      <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-0">
-          <div className="w-full md:w-1/2 space-y-6">
+      <div className="container mx-auto px-6 py-4 md:py-8 mt-8 md:mt-0">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          <div className="w-full lg:w-1/2 space-y-8 relative z-10">
             <FadeIn>
               <HeroTitle />
               <HeroContent />
             </FadeIn>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2 flex justify-center">
             <HeroIcons />
           </div>
         </div>

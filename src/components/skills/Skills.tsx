@@ -30,24 +30,28 @@ export default function Skills() {
       skills: skills.languages,
       icon: Code,
       color: "text-blue-500",
+      gradientColors: "from-blue-500/10 via-cyan-500/10 to-blue-600/10",
     },
     {
       title: "Frameworks",
       skills: skills.frameworks,
       icon: Server,
       color: "text-purple-500",
+      gradientColors: "from-purple-500/10 via-violet-500/10 to-purple-600/10",
     },
     {
       title: "Blockchain",
       skills: skills.blockchain,
       icon: Database,
       color: "text-green-500",
+      gradientColors: "from-green-500/10 via-emerald-500/10 to-green-600/10",
     },
     {
       title: "Databases",
       skills: skills.databases,
       icon: Shield,
       color: "text-red-500",
+      gradientColors: "from-red-500/10 via-orange-500/10 to-red-600/10",
     },
   ];
 
@@ -67,6 +71,7 @@ export default function Skills() {
               skills={card.skills}
               icon={card.icon}
               iconColor={card.color}
+              gradientColors={card.gradientColors}
               index={index}
             />
           ))}

@@ -5,4 +5,5 @@ export interface Experience {
   description: string;
   achievements: string[];
   techStack: string[];
+  gradientColors?: string;
 }

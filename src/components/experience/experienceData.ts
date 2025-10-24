@@ -7,6 +7,7 @@ export const experienceData: Experience[] = [
     period: "May 2023 – present",
     description:
       "API3 builds solutions that bridge the gap between off-chain data and on-chain applications with maximal security and minimal latency.",
+    gradientColors: "from-blue-500/10 via-cyan-500/10 to-blue-600/10",
     achievements: [
       "Developed an Ecosystem website using Nuxt3 and Nitro to list all dApps utilizing API3 services dynamically.",
       "Created a real-time liquidation data extraction service leveraging Subgraphs and ethers.js to calculate liquidation metrics and searcher profits across lending dApps.",
@@ -29,6 +30,7 @@ export const experienceData: Experience[] = [
     period: "Jan 2022",
     description:
       "QuickSwap is a Decentralized exchange platform on the Polygon Chain.",
+    gradientColors: "from-purple-500/10 via-blue-500/10 to-indigo-600/10",
     achievements: [
       "Optimized Quickswap App initial loading using React Lazy load, improving app's initial load time by 80%.",
       "Optimized App speed by 30-40% and improved User experience by reducing component re-rendering in React.",
@@ -63,6 +65,7 @@ export const experienceData: Experience[] = [
     period: "July 2020 – June 2021",
     description:
       "Endovision is a HongKong based med-tech startup which works on ML based solutions to improve the diagnostic accuracy of the Upper-GI Endoscopy.",
+    gradientColors: "from-emerald-500/10 via-teal-500/10 to-green-600/10",
     achievements: [
       "Built frame sequence labelling and area labelling features using Pyqt5, helping data-scientists improve classifier model accuracy from 45-78% to 87%.",
       "Built Upload AI-experiment feature using Pyqt5 to visualize results in the inference view, reducing 2-3 hours of manual integration to under 1-minute automated pipeline.",

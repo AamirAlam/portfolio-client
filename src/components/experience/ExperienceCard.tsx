@@ -6,17 +6,29 @@ import { type Experience } from './types';
 
 interface ExperienceCardProps extends Experience {
   index: number;
+  gradientColors?: string;
 }
 
-export function ExperienceCard({ title, company, period, description, achievements, techStack, index }: ExperienceCardProps) {
+export function ExperienceCard({ 
+  title, 
+  company, 
+  period, 
+  description, 
+  achievements, 
+  techStack, 
+  index, 
+  gradientColors = "from-blue-600/10 via-purple-600/10 to-blue-600/10" 
+}: ExperienceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm hover:bg-gray-800/60 transition-all duration-300"
+      className="relative bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm hover:bg-gray-800/60 transition-all duration-500 group hover:scale-[1.02]"
     >
-      <div className="flex items-start space-x-4">
+      {/* Gradient overlay on hover */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradientColors} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl pointer-events-none`} />
+      <div className="flex items-start space-x-4 relative z-10">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}

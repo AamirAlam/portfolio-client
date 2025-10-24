@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FadeIn } from "../animations/FadeIn";
 import { Logo } from "./Logo";
 import { Navigation } from "./Navigation";
 import { SocialLinks } from "./SocialLinks";
@@ -10,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-black/90 backdrop-blur-sm text-white z-50">
+    <header className="fixed w-full bg-black/90 backdrop-blur-sm text-white z-[55]">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Logo />
         <Navigation />
