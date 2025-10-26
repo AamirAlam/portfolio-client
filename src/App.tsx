@@ -20,7 +20,7 @@ function App() {
         <Contact />
       </main>
       <footer className="bg-crypto-dark py-6 text-center text-gray-400">
-        <p className="font-mono">© 2024 Aamir Alam | Fullstack Blockchain Developer</p>
+        <p className="font-mono px-4 md:px-0">© 2025 Aamir Alam | Fullstack Blockchain Developer</p>
       </footer>
     </div>
   );

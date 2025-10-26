@@ -27,7 +27,7 @@ export function ContactInfo() {
   return (
     <>
       <p className="text-gray-400 mb-8">
-        Based in Ghazipur, U.P, I'm always interested in hearing about new
+        Based in Dubai UAE, I'm always interested in hearing about new
         blockchain projects and opportunities. Whether you have a question or
         just want to say hi, feel free to reach out!
       </p>
