@@ -3,7 +3,70 @@
 A modern, responsive portfolio website showcasing my work as a Fullstack Blockchain Developer. Built with cutting-edge technologies and featuring smooth animations, interactive elements, and a sleek cyberpunk-inspired design.
 
 
-##  Tech Stack
+## End-to-End Testing
+
+This project uses [Playwright](https://playwright.dev/) for end-to-end testing, ensuring that critical user flows work as expected.
+
+### Running Tests
+
+Run all tests:
+```bash
+pnpm test:e2e
+```
+
+Run tests in headed mode (opens a browser window):
+```bash
+pnpm test:e2e -- --headed
+```
+
+Run a specific test file:
+```bash
+pnpm test:e2e tests-e2e/example.spec.ts
+```
+
+Run tests in debug mode:
+```bash
+pnpm test:e2e -- --debug
+```
+
+### Writing Tests
+
+1. Test files should be placed in the `tests-e2e` directory with the `.spec.ts` extension.
+2. Use the `test` function to define test cases.
+3. Use Playwright's built-in selectors and assertions for reliable tests.
+
+Example test:
+```typescript
+import { test, expect } from '@playwright/test';
+
+test('homepage has title and links to intro page', async ({ page }) => {
+  await page.goto('/');
+  
+  // Expect a title "to contain" a substring
+  await expect(page).toHaveTitle(/Portfolio/);
+  
+  // Click the get started link
+  await page.getByRole('link', { name: 'GitHub' }).click();
+  
+  // Expects page to have a heading with the name of Installation
+  await expect(page.getByRole('heading', { name: 'GitHub Profile' })).toBeVisible();
+});
+```
+
+### Best Practices
+- Test critical user journeys
+- Keep tests independent and isolated
+- Use meaningful test descriptions
+- Leverage page object models for complex test suites
+- Run tests in CI/CD pipeline
+
+### Debugging Tests
+
+- Use `page.pause()` to pause test execution
+- Run with `--debug` flag for Playwright's debug tools
+- Use `test.only` to run a specific test during development
+
+## Tech Stack
 
 ### Frontend
 - **React 18** - Modern React with hooks and functional components
@@ -17,6 +80,7 @@ A modern, responsive portfolio website showcasing my work as a Fullstack Blockch
 - **Prettier** - Code formatting
 - **Husky** - Git hooks for code quality
 - **Lint-staged** - Run linters on staged files
+- **Playwright** - End-to-end testing framework
 
 ### Icons & UI
 - **Lucide React** - Beautiful, customizable icons
