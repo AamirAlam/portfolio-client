@@ -8,7 +8,7 @@ import { MatrixBackground } from './components/theme/MatrixBackground';
 
 function App() {
   return (
-    <div className="bg-crypto-dark text-white font-sans">
+    <div  id="app" className="bg-crypto-dark text-white font-sans">
       <MatrixBackground />
       <Header />
       <main className="relative">
